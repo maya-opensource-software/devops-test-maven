@@ -1,4 +1,4 @@
-package ph.maya.devsecops.maven_test;
+package ph.maya.devsecops.mavenTest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
