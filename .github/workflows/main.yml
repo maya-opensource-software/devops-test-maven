@@ -18,8 +18,8 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
-      - name: maven test
-        run: mvn test
+      - name: Maven Test
+        run: mvn test verify
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
