@@ -8,6 +8,7 @@ class AccountServiceTest {
 
     private final AccountService accountService = new AccountService();
 
+    @Test
     void returnsAccountInfoWithValidData() {
         AccountInfo account = accountService.getAccount();
         assertNotNull(account);
@@ -15,6 +16,7 @@ class AccountServiceTest {
         assertEquals("John Doe", account.getAccountName());
     }
 
+    @Test
     void returnsAccountInfoWithNonNullFields() {
         AccountInfo account = accountService.getAccount();
         assertNotNull(account.getAccountId());
