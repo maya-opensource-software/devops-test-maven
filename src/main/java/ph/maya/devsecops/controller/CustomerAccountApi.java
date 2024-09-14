@@ -4,17 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ph.maya.devsecops.dto.AccountInfo;
-import ph.maya.devsecops.service.AccountService;
+import ph.maya.devsecops.dto.CustomerAccount;
 
 @RestController
-@RequestMapping("/api/account")
-public class AccountEndpoint {
+@RequestMapping("/api/customer-account")
+public class CustomerAccountApi {
+
     @Autowired
-    private AccountService accountService;
+    CustomerAccountApi customerAccountService;
 
     @GetMapping
-    public AccountInfo getAccount() {
-        return accountService.getAccount();
+    public CustomerAccount getCustomerAccount() {
+        return customerAccountService.getCustomerAccount();
     }
 }
