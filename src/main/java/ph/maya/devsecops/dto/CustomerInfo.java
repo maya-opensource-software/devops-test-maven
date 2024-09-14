@@ -1,5 +1,8 @@
 package ph.maya.devsecops.dto;
 
+import lombok.Data;
+
+@Data
 public class CustomerInfo {
   private String customerId;
   private String firstName;
